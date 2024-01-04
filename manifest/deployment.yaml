@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: restappcontainer
-        image: restappimage
+        image: 6945/restappimage
         ports:
         - containerPort: 8000
 ---
