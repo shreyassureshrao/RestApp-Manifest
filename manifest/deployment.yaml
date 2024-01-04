@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: restappcontainer
-        image: restappimage:latest
+        image: restappimage
         ports:
         - containerPort: 8000
 ---
@@ -35,5 +35,5 @@ spec:
   ports:
     - protocol: TCP
       port: 8000
-      targetPort: 8080  #Since ArgoCD is listening to this port
+      targetPort: 8000 
   type: NodePort
