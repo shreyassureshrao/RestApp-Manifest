@@ -6,7 +6,7 @@ metadata:
   name: restapp-deployment
   labels:
     app: restapp
-  namespace: restapp-ns
+  namespace: default
 spec:
   replicas: 2
   selector:
@@ -28,7 +28,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: restapp-service
-  namespace: restapp-ns
+  namespace: default
 spec:
   selector:
     app: restapp
