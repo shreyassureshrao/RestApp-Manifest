@@ -1,0 +1,14 @@
+ytMPa4GrF9e2th-v
+
+minikube service restapp-service --url
+If the port is 62961, then
+http://127.0.0.1:62961/docs
+
+Memory = 3500MB
+
+
+Steps
+1. minikube start --driver=docker --memory=3500 --cpus=2
+2. kubectl create namespace argocd
+3. kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+4. kubectl get pods -n argocd
